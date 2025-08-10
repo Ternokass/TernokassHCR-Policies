@@ -63,7 +63,7 @@ Depending on the service used, the Firebase SDK may process:
 •	Crash Reports – including stack traces, error logs, and associated device information for debugging purposes.
 •	Firebase Unique User Identifier (UID) – generated automatically during anonymous sign-in and stored in our database for as long as your account exists.
 •	Authentication Tokens – used temporarily for identity verification and session management; not stored by us after verification.
-All data transmitted to Firebase is encrypted in transit. The processing of this data is governed by Google’s Privacy Policy: https://policies.google.com/privacy.
+All data transmitted to Firebase is encrypted in transit. The processing of this data is governed by [Google’s Privacy Policy](https://policies.google.com/privacy).
 
 
 Google AdMob & Ads Monetization (by Google LLC)
@@ -80,7 +80,7 @@ II. Application usage data
 III. Approximate location
 IV. Advertisement interaction data (impressions, clicks)
 V. Diagnostic and crash information
-We do not collect or store this information directly. All ad-serving and related tracking data is collected and processed by Google LLC, acting as the data controller, in accordance with Google’s Privacy Policy.
+We do not collect or store this information directly. All ad-serving and related tracking data is collected and processed by Google LLC, acting as the data controller, in accordance with [Google’s Privacy Policy](https://policies.google.com/privacy).
 Consent Record Stored by Us
 For legal compliance purposes, we maintain a minimal consent record in our secure Firebase Firestore database for every player, including:
 I. Whether the ads are personalized or non-personalized.
@@ -102,8 +102,8 @@ I. Accessing the “Ad Preferences” section in the app settings to reopen the 
 
 External Links to Legal Documents and Settings
 Our game may display links to important legal documents, including but not limited to our Privacy Policy, Refund Policy, End User License Agreement (EULA), and Terms and Conditions. These documents are hosted on GitHub Pages or within GitHub repositories to ensure public accessibility and transparency.
-When you click on any of these links (such as during the consent process), you may be redirected to GitHub’s website to view the respective document. GitHub, Inc. (a Microsoft company) may process certain technical data in accordance with its own privacy practices, which you can review here: GitHub Privacy Statement.
-For users in non-regulated regions, the Ad Preferences section within our in-app settings may redirect you to an external browser link where you can manage your Google advertising preferences at: https://adssettings.google.com. This site is operated by Google LLC and is subject to Google’s own privacy policies.
+When you click on any of these links (such as during the consent process), you may be redirected to GitHub’s website to view the respective document. GitHub, Inc. (a Microsoft company) may process certain technical data in accordance with its own privacy practices, which you can review here: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+For users in non-regulated regions, the Ad Preferences section within our in-app settings may redirect you to an external browser link where you can manage your [Google advertising preferences](https://adssettings.google.com). This site is operated by Google LLC and is subject to Google’s own privacy policies.
 
 WHY WE PROCESS PERSONAL DATA
 We use the Personal Data we collect as described by this Notice. More specifically, we may use it to:
