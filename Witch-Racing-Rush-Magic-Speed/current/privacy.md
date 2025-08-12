@@ -34,7 +34,7 @@ Current Age Confirmation Statement Versions:
 We do not collect your exact date of birth.
 This record is stored together with your account information and is used solely to demonstrate compliance with applicable age-related laws and regulations.
 
-All other gameplay-related data is stored locally on your device. And, where applicable, mobile application may have access to your microphone. In addition, certain technical information — such as IP address, device type and model, operating system version, app version, crash logs, interaction logs, and session duration — may be automatically collected by third-party service providers integrated into our app, including Firebase Analytics and Firebase Crashlytics (both by Google LLC). This information is used for app performance monitoring, crash reporting, and usage analytics. We do not directly store or access IP addresses or other such technical identifiers ourselves, except for the ones mentioned above; their collection and processing are handled by these third-party providers in accordance with their own privacy policies. All such data practices are also disclosed in the “Data Safety” section of our Google Play Store listing, in compliance with Google Play’s developer policies.
+All other gameplay-related data is stored locally on your device. And, where applicable, mobile application may have access to your microphone. In addition, certain technical information — such as IP address, device type and model, operating system version, app version, crash logs, interaction logs, and session duration — may be automatically collected by third-party service providers integrated into our app, including Firebase Crashlytics and others( by Google LLC). This information is used for app performance monitoring, crash reporting, and usage analytics. We do not directly store or access IP addresses or other such technical identifiers ourselves, except for the ones mentioned above; their collection and processing are handled by these third-party providers in accordance with their own privacy policies. All such data practices are also disclosed in the “Data Safety” section of our Google Play Store listing, in compliance with Google Play’s developer policies.
 
 HOW WE COLLECT PERSONAL DATA
 Our approach to Personal Data collection involves a structured and comprehensive methodology. We utilize a range of formally established channels and mechanisms to ensure the lawful and ethical acquisition of Personal Data. These primary channels through which we gather Personal Data are designed to uphold the highest standards of data privacy and security while enhancing your experience on our Mobile Application.
@@ -45,25 +45,23 @@ iv.	Third-Party Sources: We may receive Personal Data from third-party service p
 
 
 Firebase SDK (by Google LLC)
-We use certain Firebase services provided by Google LLC to support the operation, security, and performance of our Mobile Application. These services are integrated using the official Firebase SDK for Unity and include:
-1.	Firebase Authentication – to securely authenticate users via Anonymous Sign-In and generate a unique Firebase UID for consent tracking, legal compliance, and gameplay data storage.
-2.	Firebase Firestore – to store minimal player information necessary for account operation, legal compliance, and consent record-keeping.
-3.	Firebase Crashlytics – to monitor, log, and debug app crashes for stability improvements.
-4.	Firebase Analytics – to collect aggregated, non-identifiable usage statistics for app performance measurement and feature improvement.
+We use certain Firebase services provided by Google LLC to support the operation, security, and stability of our Mobile Application. These services are integrated using the official Firebase SDK for Unity and include:
+I.	Firebase Authentication – to securely authenticate users via Anonymous Sign-In and generate a unique Firebase UID for consent tracking, legal compliance, and gameplay data storage.
+II.	Firebase Firestore – to store minimal player information necessary for account operation, legal compliance, and consent record-keeping.
+III.	Firebase Crashlytics – to monitor, log, and debug app crashes for stability improvements.
 Purpose of Processing
 The Firebase services are used solely to:
-•	Securely create and maintain a unique player account via anonymous authentication.
-•	Maintain required legal and consent records.
-•	Diagnose and resolve technical issues.
-•	Understand general user interaction trends (without identifying individual users).
+I.	Securely create and maintain a unique player account via anonymous authentication.
+II.	Maintain required legal and consent records.
+III.	Diagnose and resolve technical issues to improve app stability.
 Data Collected via Firebase SDK
 Depending on the service used, the Firebase SDK may process:
-•	Device Information – such as device model, operating system version, language, and timezone (used for analytics and crash reporting).
-•	Application Interaction Data – such as app launches, screen views, and session duration (non-personal).
-•	Crash Reports – including stack traces, error logs, and associated device information for debugging purposes.
-•	Firebase Unique User Identifier (UID) – generated automatically during anonymous sign-in and stored in our database for as long as your account exists.
-•	Authentication Tokens – used temporarily for identity verification and session management; not stored by us after verification.
-All data transmitted to Firebase is encrypted in transit. The processing of this data is governed by [Google’s Privacy Policy](https://policies.google.com/privacy).
+I.	Device Information – such as device model, operating system version, language, and timezone (used for crash reporting).
+II.	Crash Reports – including stack traces, error logs, and associated device information for debugging purposes.
+III.	Firebase Unique User Identifier (UID) – generated automatically during anonymous sign-in and stored in our database for as long as your account exists.
+IV.	Authentication Tokens – used temporarily for identity verification and session management; not stored by us after verification.
+All data transmitted to Firebase is encrypted in transit. The processing of this data is governed by [Google’s Privacy Policy](https://policies.google.com/privacy)
+
 
 
 Google AdMob & Ads Monetization (by Google LLC)
