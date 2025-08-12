@@ -45,21 +45,28 @@ iv.	Third-Party Sources: We may receive Personal Data from third-party service p
 
 
 Firebase SDK (by Google LLC)
-We use certain Firebase services provided by Google LLC to support the operation, security, and stability of our Mobile Application. These services are integrated using the official Firebase SDK for Unity and include:
-I.	Firebase Authentication – to securely authenticate users via Anonymous Sign-In and generate a unique Firebase UID for consent tracking, legal compliance, and gameplay data storage.
-II.	Firebase Firestore – to store minimal player information necessary for account operation, legal compliance, and consent record-keeping.
-III.	Firebase Crashlytics – to monitor, log, and debug app crashes for stability improvements.
+We use Firebase services from Google LLC in our Android app via the official Firebase SDK for Unity. These include:
+I. Firebase Authentication – securely authenticates users via Anonymous Sign-In and generates a Firebase UID for consent tracking and required account records.
+II. Firebase Firestore – stores minimal player information necessary for account operation, legal compliance, and consent record-keeping.
+III. Firebase Crashlytics – collects crash reports to diagnose and improve app stability.
+IV. Firebase App Check (Android – Google Play Integrity) – verifies that requests to Firebase (Auth, Firestore) come from a genuine, unmodified Android build of our app. When enforcement is enabled, requests without valid Play Integrity attestation are blocked. During internal testing we may register a temporary “debug token” for designated test devices to allow testing while App Check is enforced.
 Purpose of Processing
-The Firebase services are used solely to:
-I.	Securely create and maintain a unique player account via anonymous authentication.
-II.	Maintain required legal and consent records.
-III.	Diagnose and resolve technical issues to improve app stability.
+I. Create and maintain a unique player account (anonymous authentication).
+II. Maintain required legal/consent records.
+III. Diagnose and resolve technical issues (crash reporting).
+IV. Protect our backend from abuse and fraud by validating app integrity and blocking unauthorized clients (App Check).
 Data Collected via Firebase SDK
-Depending on the service used, the Firebase SDK may process:
-I.	Device Information – such as device model, operating system version, language, and timezone (used for crash reporting).
-II.	Crash Reports – including stack traces, error logs, and associated device information for debugging purposes.
-III.	Firebase Unique User Identifier (UID) – generated automatically during anonymous sign-in and stored in our database for as long as your account exists.
-IV.	Authentication Tokens – used temporarily for identity verification and session management; not stored by us after verification.
+I. Device Information (Crashlytics): device model, OS version, language, timezone, and crash context.
+II. Crash Reports: stack traces, error logs, and associated device information.
+III. Firebase Unique User Identifier (UID): created during anonymous sign-in and stored while the account exists.
+IV. Authentication Tokens: short-lived tokens used for identity verification and session management (we do not retain them after use).
+V. App Check Attestation (Play Integrity): short-lived integrity tokens/verdicts based on signals such as package name, app signing certificate, and device/app environment. We receive only what is needed to validate requests and do not use App Check data for advertising or profiling. Debug tokens may be used only on designated test devices and can be revoked at any time.
+Retention & Security
+•	App Check attestation tokens are short-lived and used only to authorize requests; we do not retain them beyond operational needs.
+•	Crash and minimal account data are retained only as necessary for the purposes above and as required by law.
+•	Google LLC acts as our service provider for these services; processing may occur on servers outside your country. See Google/Firebase documentation for details on data handling and security.
+Choices
+Firebase App Check is a security feature necessary to protect the service. If App Check validation fails (e.g., unauthorized or tampered client), sign-in and data access may not function.
 All data transmitted to Firebase is encrypted in transit. The processing of this data is governed by [Google’s Privacy Policy](https://policies.google.com/privacy)
 
 
